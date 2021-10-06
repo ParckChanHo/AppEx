@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="없음"
+        android:id="@+id/btn"
+        android:visible="false"/>
+    <item
+        android:id="@+id/action"
+        android:icon="@drawable/action_icon"
+        android:enabled="true"
+        android:title="추천" />
+    <item
+        android:id="@+id/cure"
+        android:icon="@drawable/cure_icon"
+        android:enabled="true"
+        android:title="진단" />
+    <item
+        android:id="@+id/board"
+        android:icon="@drawable/board_icon"
+        android:enabled="true"
+        android:title="게시판" />
+</menu>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/logout"
+            android:title="로그아웃"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+        <item
+            android:id="@+id/test"
+            android:title="검진결과 조회"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+        <item
+            android:id="@+id/connect"
+            android:title="상담센터 안내"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+        <item
+            android:id="@+id/using"
+            android:title="이용방법"
+            android:visible="false"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+    </group>
+
+</menu>
