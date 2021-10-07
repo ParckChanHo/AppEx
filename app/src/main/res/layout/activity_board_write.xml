@@ -6,12 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".board_write">
 
-    <androidx.drawerlayout.widget.DrawerLayout
-
-        android:id="@+id/drawerLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -23,14 +17,18 @@
                 android:orientation="vertical"
                 android:layout_below="@+id/toolbar"
                 android:layout_alignParentBottom="true"
-                android:layout_marginBottom="?attr/actionBarSize">
+                android:layout_marginBottom="?attr/actionBarSize"
+                android:padding="8dp">
 
 
                 <EditText
                     android:id="@+id/write_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPersonName"
+                    android:background="@null"
+                    android:inputType="none"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
                     android:hint="제목"/>
 
 
@@ -44,8 +42,11 @@
                 <EditText
                     android:id="@+id/write_content"
                     android:layout_width="match_parent"
-                    android:layout_height="400dp"
-                    android:inputType="textPersonName"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:background="@null"
+                    android:textColor="#000000"
                     android:hint="내용을 입력하세요"/>
 
                 <Button
@@ -79,17 +80,5 @@
             </androidx.appcompat.widget.Toolbar>
 
         </RelativeLayout>
-
-        <com.google.android.material.navigation.NavigationView
-            android:id="@+id/navigationView"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="start"
-            android:fitsSystemWindows="true"
-            android:background="@drawable/navg_img"
-            app:headerLayout="@layout/navigation_item"
-            app:menu="@menu/navigation_menu" />
-
-    </androidx.drawerlayout.widget.DrawerLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
