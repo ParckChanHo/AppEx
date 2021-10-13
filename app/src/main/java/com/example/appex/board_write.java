@@ -31,18 +31,18 @@ public class board_write extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_board_write);
-
+        //깃에 왜안올라가지
         //툴바 설정
-        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayShowTitleEnabled(false);//기존 title 지우기
         actionBar.setDisplayHomeAsUpEnabled(true); //왼쪽 버튼 사용 여부
 
-        ed_title = (EditText) findViewById(R.id.write_title);
-        ed_content = (EditText) findViewById(R.id.write_content);
-        btn = (Button) findViewById(R.id.write_button);
-        check = (CheckBox) findViewById(R.id.checkBox);
+        ed_title = findViewById(R.id.write_title);
+        ed_content = findViewById(R.id.write_content);
+        btn = findViewById(R.id.write_button);
+        check = findViewById(R.id.checkBox);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
