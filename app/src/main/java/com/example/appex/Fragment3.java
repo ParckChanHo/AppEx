@@ -67,7 +67,7 @@ public class Fragment3 extends Fragment {
         requestQueue = Volley.newRequestQueue(getActivity());
 
         swipe.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
+                @Override
             public void onRefresh() {
                 //게시글 보여주기
                 String url = "http://115.85.181.116:8080/android/webapp/board.jsp";

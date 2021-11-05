@@ -26,10 +26,11 @@
             <LinearLayout
                 android:id="@+id/linearLayout6"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="0dp"
                 android:orientation="vertical"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -67,8 +68,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="TextView"
                     android:inputType="textMultiLine"
+                    android:text="TextView"
                     android:textColor="#000000"
                     android:textSize="14sp"
                     android:textStyle="normal" />
@@ -77,9 +78,11 @@
 
 
             <LinearLayout
+                android:id="@+id/linearLayout7"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
 
@@ -132,7 +135,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"/>
+                    android:layout_marginRight="10dp" />
 
             </LinearLayout>
 
